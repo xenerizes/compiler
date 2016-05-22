@@ -1,8 +1,5 @@
 #include "Scanner.h"
 
-#ifndef _SCANNER_
-#define _SCANNER_
-
 Token Scanner::get_token()
 {
     state = START;
@@ -192,5 +189,3 @@ void Scanner::init_tables()
     table_words.insert(keywords);
     table_delimiters.insert(delimiters);
 }
-
-#endif // _SCANNER_
