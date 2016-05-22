@@ -2,9 +2,6 @@
 #include "Error.h"
 #include <string>
 
-#ifndef _COMPILER_
-#define _COMPILER_
-
 Compiler analyze(int argc, char *argv[])
 {
     if (argc < 2) throw Error("You should select a file to start compilation");
@@ -34,5 +31,3 @@ Compiler analyze(int argc, char *argv[])
     }
     throw Error("Incorrect options");
 }
-
-#endif // _COMPILER
