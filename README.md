@@ -1,6 +1,8 @@
 # Java compiler
 
-Simple compiler for the subset of Java programming language for Linux
+Simple compiler for the subset of Java programming language for Linux.
+
+*Uses abstract syntax tree & visitor pattern for parsing.*
 
 ###Supported features: 
 * comparisons (==, >, <, >=, <=, !=);
