@@ -1,7 +1,7 @@
 # Java compiler
 
 Simple compiler for the subset of Java programming language
-(working on Linux)
+(for Linux)
 
 ###Supported features: 
 * comparisons (==, >, <, >=, <=, !=);
@@ -38,7 +38,7 @@ Then you can compile program with `make all`.
 
 ##Options for the program
 ```
-./compiler filename [-o file] [-t] [-p] [-c]
+$ ./compiler filename [-o file] [-t] [-p] [-c]
 ```
 * **-o** determines filename for assembler code to be written to. By default file  `out` is used.
 * **-t** tells compiler to make only lexical analysis and to write all found lexemes to stdout.
