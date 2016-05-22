@@ -1,9 +1,6 @@
 #include <sstream>
 #include "Code_Generator.h"
 
-#ifndef _CODE_GENERATOR_
-#define _CODE_GENERATOR_
-
 void Code_Generator::visit(const Compilation_Unit &obj)
 {
     out << '\t' << ".text" << '\n';
@@ -410,5 +407,3 @@ std::string Code_Generator::hex_str(std::string str)
     tmp << "0x0a, 0";
     return tmp.str();
 }
-
-#endif // _CODE_GENERATOR_
