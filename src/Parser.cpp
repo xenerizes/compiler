@@ -1,9 +1,6 @@
 #include <set>
 #include "Parser.h"
 
-#ifndef _PARSER_
-#define _PARSER_
-
 Tree Parser::start()
 {
     next_token();
@@ -661,5 +658,3 @@ Node *Parser::_compilation_unit()
     } catch (Error &err) { delete tmp; throw; }
     return tmp;
 }
-
-#endif // _PARSER_
