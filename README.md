@@ -2,6 +2,7 @@
 
 Simple compiler for the subset of Java programming language
 (for Linux)
+Uses abstract syntax tree & visitor for parsing
 
 ###Supported features: 
 * comparisons (==, >, <, >=, <=, !=);
