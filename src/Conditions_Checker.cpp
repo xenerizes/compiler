@@ -3,9 +3,6 @@
 #include "Tree.h"
 #include "Error.h"
 
-#ifndef _CONDITIONS_CHECKER
-#define _CONDITIONS_CHECKER
-
 void Conditions_Checker::visit(const Compilation_Unit &obj)
 {
     size_t pos = prog.find_last_of('.');
@@ -381,5 +378,3 @@ bool Conditions_Checker::good_inc_dec() const
         return true;
     return false;
 }
-
-#endif // _CONDITIONS_CHECKER
