@@ -3,9 +3,6 @@
 #include "Conditions_Checker.h"
 #include "Code_Generator.h"
 
-#ifndef _MODE_
-#define _MODE_
-
 void Full_Compiler::run()
 {
     Tree syntax_tree = parser.start();
@@ -48,5 +45,3 @@ void Lex_Analysis::run()
         current_token = scanner.get_token();
     }
 }
-
-#endif // _MODE_
