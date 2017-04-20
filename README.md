@@ -4,7 +4,7 @@ Simple compiler for the subset of Java programming language for Linux.
 
 *Uses abstract syntax tree & visitor pattern for parsing.*
 
-###Supported features: 
+### Supported features: 
 * comparisons (==, >, <, >=, <=, !=);
 * inc and dec (++, --)
 * arithmetic expressions (-, +, /, %);
@@ -30,14 +30,14 @@ public class ClassName
     }
 }
 ```
-##Compiling
+## Compiling
 First you need to generate Makefile:
 ```
 $ cmake CMakeLists.txt
 ```
 Then you can compile program with `make all`.
 
-##Options for the program
+## Options for the program
 ```
 $ ./compiler filename [-o file] [-t] [-p] [-c]
 ```
@@ -46,7 +46,7 @@ $ ./compiler filename [-o file] [-t] [-p] [-c]
 * **-p** tells compiler to make also synthaxic analysis (nothing is printed).
 * **-c** tells compiler not to generate assembler code.
 
-##Running assembler code
+## Running assembler code
 For running you should use **cvm** virtual machine by A. Chernov (see cvm/README.md for info).
 You can run your code by script `run.sh` (assuming the code is in file named `out`).
 Anyway, you can also run your code by typing:
